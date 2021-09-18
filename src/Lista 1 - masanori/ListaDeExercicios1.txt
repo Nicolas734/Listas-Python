@@ -1,0 +1,119 @@
+
+DSM
+NICOLAS LIMA DE HOLANDA GALINDO
+TURMA: MANHÃ
+
+
+LISTA DE EXERCICIOS 1
+
+exercicio 1 
+
+n1 = int(input('Digite um número:'))
+n2 = int(input('Digite um número:'))
+soma = n1 + n2
+print('Resultado:',soma)
+
+
+
+exercicio 2
+
+print('Conversor de metros em milimetros')
+metro = int(input('Digite um valor a ser convetido: '))
+milimetro = metro * 1000
+print ('Resultado:')
+print( milimetro,'milimetros')
+
+
+
+exercicio 3
+
+dias = int(input('quantidade de dias: '))
+horas = int(input('quantidade de horas: '))
+minutos = int(input('quantidade de minutos: '))
+segundo = int(input('quantidade de segundos: '))
+
+d = 86400
+ds = d * dias
+
+h = 3600
+hs = h * horas
+
+m = 60
+ms = m * minutos
+
+dhms = ds + hs + ms + segundo
+
+print (f' {dhms} segundos')
+
+
+
+exercicio 4
+
+salario = float(input( 'Digite o salario: ' ))
+aumento = int(input( 'Digite a porcentagem do aumento: ' ))
+porcentagem = aumento*salario / 100+ salario
+print (f' aumento de {porcentagem}% ')
+
+
+exercicio 5
+
+mercadoria = float(input( 'Digite o valor da mercadoria: ' ))
+desconto = int(input( 'Digite o valor do desconto: ' ))
+valorfinal =  desconto*mercadoria / 100 - mercadoria
+valorfinalpositivo = valorfinal * (-1)
+descontovalor = desconto*mercadoria / 100 + mercadoria
+valordodesconto = descontovalor - mercadoria
+print (f' valor: {valorfinalpositivo} ')
+print (f' valor descontado: {valordodesconto} ')
+
+
+
+exercicio 6
+
+distancia = float(input('distancia a ser percorrida:  '))
+velocidade = float(input('velocidade média '))
+tempo = distancia / velocidade
+print (f'duração de {tempo} ')
+
+
+
+exercicio 7
+
+celsius = int(input('Digite um valor em celsius a ser convertido: '))
+fahrenheit= 9*celsius/5+32
+print ( fahrenheit,'ºF')
+
+
+
+exercicio 8
+
+fahrenheit = float(input('fahrenheit: '))
+celsius = (fahrenheit - 32)*5 / 9
+print (f'{celsius:.2f} celsius')
+
+
+
+exercicio 9
+
+km = int(input( 'quantidade de km rodado: '))
+dias = int(input( 'quantidade de dias alugados: '))
+valorpordia = dias * 60
+kmvalor = km * 0.15
+total = valorpordia + kmvalor
+print (f' valor a ser pago { total }')
+
+
+
+exercicio 10
+
+cigarros = int(input('quantidade de cigarros por dia ?  '))
+anos = int(input('fuma a quanto anos ?  '))
+totalporano = anos * 365 * cigarros
+diasportotal = totalporano / 144
+print (f'{diasportotal:.1f} dias perdidos' )
+
+
+
+exercicio 11
+
+len(str(2**1000000))

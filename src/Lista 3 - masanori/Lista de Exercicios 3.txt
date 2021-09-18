@@ -1,0 +1,77 @@
+
+#Nicolas Lima de Holanda Galindo
+#DSM
+#TURMA: MANHÃ
+
+#Lista de Exercicios 3
+
+
+
+
+#exercicio 1
+
+nota = int(input('digite uma nota de 0 a 10:  '))
+while ( nota > 10 ):
+    print ( 'tente novamente' )
+    nota = int(input('digite um numero de 1 a 10 '))
+if (nota < 10 ):
+    print ('muito bem')
+
+
+
+#exercicio 2
+
+usuário = input('digite um nome de usuário: ')
+senha = str(input('digite uma senha: '))
+while ( senha == usuário ):
+    print ( 'ERRO' )
+    print ( 'SENHA NÃO PODE SER IGUAL AO NOME DE USUÁRIO, POR FAVOR INFORME UM VALOR VÁLIDO' )
+    usuário = input('digite seu nome de usuário: ')
+    senha = str(input('digite sua senha: '))
+if (usuário != senha):
+    print ( 'conta criada')
+
+
+#exercicio 3
+
+a=80000
+b=200000
+anos=0
+
+while a<=b:
+    a=(a*0.03)+a
+    b=(b*0.015)+b
+    anos=anos+1
+
+print(f"{anos}anos até se igualar a população do pais B")
+
+
+
+#exercicio 4
+
+n0 = int(input('digite a posição desejada da sequencia de fibonacci: '))
+n1 = 0
+n2 = 1
+n3 = 0
+
+print('sequencia de fibonacci')
+
+while n3 < n0:
+    n = n1 + n2
+    n1 = n2
+    n2 = n
+    n3 += 1
+if n3 == n0:
+    print ( n1 )
+
+
+
+#exercicio 5
+
+n1 = int (input('Digite o primeiro numero: '))
+n2 = int (input('Digite o segundo numero: '))
+
+while n1 % n2 != 0:
+    n1, n2 = n2, n1 % n2
+print (f'O MDC dos seus números é: {n2}')
+

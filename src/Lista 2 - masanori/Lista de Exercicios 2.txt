@@ -1,0 +1,109 @@
+
+#Nicolas Lima de Holanda Galindo
+#DSM
+#TURMA: MANHÃ
+
+#Lista de Exercicios 2
+
+#exercicio1
+
+print ('digite o valor dos lados do triangulo para descobir qual é  ')
+a = int(input( 'valor do lado A: '))
+b = int(input( 'valor do lado B: '))
+c = int(input( 'valor do lado C: '))
+if a != b and a != c and b != c:
+          escaleno = a,b,
+          print ('é um triangulo escaleno')
+elif a == b and a == c and b == c:
+          equilatero = a,b,c
+          print ('é um triangulo equilatero')
+else:
+          a == b or a == c and a != c or a != b
+          isosceles = a,b,c
+          print ('é um triangulo isosceles')
+
+
+
+#exercicios2
+
+ano1 = int(input('digite o ano que deseja analisar: '))
+if ano1 % 4 == 0 and ano1 % 100 != 0 or ano1 % 400 == 0:
+          print('o {} é bissexto'.format(ano1))
+else:
+          print('o {} não é bissexto'.format(ano1))
+
+
+
+#exercicio3
+
+pesopeixes = float(input('quilo de peixes sendo transportado: '))
+peso = 50
+if pesopeixes > peso:
+          excesso = pesopeixes - peso
+          multa = excesso * 4
+          print('multado por valor de peso excedido')
+          print('peso excedido em {:.1f} kg'.format(excesso))
+          print('multa a ser paga {:.1f} reais'.format(multa))
+else:
+          print('peso não excedido')
+          print('peso excedido: 0 kg')
+          print('multa a ser paga: 0 reais')
+
+
+
+
+#exercicio4
+
+n1 = int(input('digite o primeiro numero: '))
+n2 = int(input('digite o segundo numero: '))
+n3 = int(input('digite o terceiro numero: '))
+if n1 > n2 and n1 > n3:
+          print(' o numero {} é o maior'.format(n1))
+if n2 > n1 and n2 > n3:
+          print(' o numero {} é o maior'.format(n2))
+if n3 > n1 and n3 > n2:
+          print (' o numero {} é o maior'.format(n3))
+
+
+
+#exercicio5
+
+n1 = int(input('digite o primeiro numero: '))
+n2 = int(input('digite o segundo numero: '))
+n3 = int(input('digite o terceiro numero: '))
+if n1 < n2 and n1 < n3:
+          print('o numero {} é o menor'.format(n1))
+if n2 < n1 and n2 < n3:
+          print('o numero {} é o menor'.format(n2))
+if n3 < n1  and n3 < n2:
+          print('o numero {} é o menor'.format(n3))
+
+
+
+#exercicio6
+
+gph = int(input('ganho por hora: '))
+htpm = int(input('quantidade de horas trabalhadas por mes: '))
+salariobruto =  gph * htpm
+ir = salariobruto * 11 / 100
+inss = salariobruto * 8 / 100
+sindicato = salariobruto * 5 / 100
+impostos = ir + inss + sindicato
+sliquido = salariobruto - impostos
+print('salario bruto é igual a {:.1f} reais'.format(salariobruto))
+print('ir igual a {:.1f} reais'.format(ir))
+print('inss é igual a {:.1f} reais'.format(inss))
+print('sindicato é igual a {:.1f} reais'.format(sindicato))
+print('salario liquido é igual a {:.1f} reais'.format(sliquido))
+
+
+
+#exercicio7
+
+area = int(input('tamanho da area a ser pintada: '))
+lata = 54
+areaporlata = area / lata
+preço = areaporlata * 80
+print ('quantidade de latas: ', round(areaporlata+0.5))
+print (f'valor a pagar:{preço:.1f}')
+
